@@ -29,7 +29,7 @@ $(function () {
         e.preventDefault();
         $.ajax({
             type: 'POST',
-            url: 'http://www.liulongbin.top:3007/api/reguser',
+            url: '/api/reguser',
             data: $(this).serialize(),//seralize 获取当前表单的所有内容并且按name排列好
             success: function (res) {
                 if (res.status !== 0) {
